@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Racing Pro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>🚗 Car Racing Pro</h1>
+  <div class="buttons">
+    <button id="btnStart">Start</button>
+    <button id="btnPause">Pause</button>
+    <button id="btnMute">Mute</button>
+  </div>
+</header>
+
+<main>
+  <canvas id="gameCanvas" width="400" height="700"></canvas>
+
+  <div class="hud">
+    <span>Score: <b id="score">0</b></span>
+    <span>Speed: <b id="speed">0</b></span>
+    <span>High: <b id="highScore">0</b></span>
+  </div>
+
+  <div id="overlay" class="overlay">
+    <h2 id="overlayTitle">Car Racing Pro</h2>
+    <p id="overlayText">Press Start to Begin</p>
+    <button id="btnOverlay">Start</button>
+  </div>
+</main>
+
+<script src="js/game.js"></script>
+</body>
+</html>
